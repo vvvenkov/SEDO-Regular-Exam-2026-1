@@ -1,0 +1,44 @@
+Task 1:
+git clone https://github.com/vvvenkov/SEDO-Regular-Exam-2026-1
+git checkout -b feature/new-ui-button
+git branch
+git checkout main
+git checkout -b bugfix/home-load
+git checkout main
+git checkout -b chore/user-service-refactor
+git checkout main 
+git push -u origin bugfix/home-load
+git push -u origin chore/user-service-refactor
+git push -u origin feature/new-ui-button
+
+git checkout chore/user-service-refactor
+git status
+git diff
+git add .
+git commit -m "refactor userService class"
+git log --oneline
+git rebase -i HEAD~3
+git push
+
+git checkout bugfix/home-load
+git add .
+git commit -m "fix home load bug"
+git log --oneline 
+git rebase -i HEAD~3
+git push
+
+git checkout feature/new-ui-button
+git add .
+git commit -m "new feature: new UI Button"
+git log --oneline 
+git rebase -i HEAD~3
+git push
+
+
+
+
+
+Task 2:
+https://github.com/vvvenkov/SEDO-Regular-Exam-2026-2
+dotnet build
+dotnet test
